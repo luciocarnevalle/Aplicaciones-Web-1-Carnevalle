@@ -6,33 +6,116 @@
         <title>Contacto</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="../css/styles2.css">
+        <link rel="stylesheet" href="../css/quienesSomos.css">
+        <link rel="stylesheet" href="../css/contacto.css">
     </head>
     <body>
-        <nav>
-             <a href="index.html" class="brand" aria-label="Inicio">🎾 SmashTenis </a>
-                <!-- Tengo q poner un logo mas adelante --> 
-            
-            <ul>
-                <li><a href="../index.html">Bienvenida</a></li>
-                <li><a href="../Pages/registro.html">Sumate a la comunidad</a></li>
-                <li><a href="../Pages/login.html">Login</a></li>
-                <li><a href="../Pages/Productos.html">Ver Productos</a></li>                
-                <li><a href="../Pages/QuienesSomos.html">Quienes Somos</a></li>
-                <li><a href="Pages/contacto.html">Contacto</a></li>
-            </ul>      
-        </nav>
+        <header class="main-header">
+            <div class ="header-left">
+                <a href="../index.html" class="logo">
+                    <img src="../images/Logo Smash Tenis.png" alt="Logo Smash Tenis">
+                </a>
+                <h1 class="titulo">Smash Tenis</h1>
+            </div>
+           
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Pagina Principal</a></li>
+                    <li><a href="../pages/registro.html">Sumate a la comunidad</a></li>
+                    <li><a href="../pages/login.html">Login</a></li>                   
+                    <li><a href="../pages/productos.html">Productos</a></li>
+                    <li><a href="../pages/quienessomos.html">Quiénes Somos</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <br>
-        <h2>Como contactarnos</h2>
-        <br>
-        Para más información, contactarse a través de:
-        <ul>
-            <li>Email: luciocarnevalle12@gmail.com</li><br>
-            <li>Telefono: +54 9 11 2345 6789</li><br>
-            <li>Direccion: Calle Falsa 123, Cordoba, Argentina</li><br>
-            <li>Redes Sociales: @SmashTenis (Instagram, Twitter, Facebook)</li><br>            
-        </ul>       
+
+        <main class="PaginaContacto">
+            <section class="contacto-introduccion">
+                <h2>Contáctanos y Mejora tu Juego</h2>
+                <p>¿Tienes dudas o necesitas ayuda con tu pedido? Rellena nuestro formulario, llámanos o visítanos.</p>
+            </section>
+
+            <section class="formulario">
+                <h3>Envíanos un mensaje, te contactaremos a la brevedad:</h3>
+                <form action ="" method="post">
+                    <div class="form-nombre">
+                        <label for="txtNombre">
+                                <b> <!--En negrita-->
+                                    Nombre:</label>
+                                </b>
+                                <input type="text"  name="txtNombre" placeholder="Ingrese su nombre" required>
+                                <br><br> <!--Salto de linea-->
+                    </div>
+
+                    <div class="form-mail">
+                        <label for="txtEmail">
+                        <b>
+                            Email:
+                        </b>
+                        <input type="email" name="txtEmail" placeholder="Ingrese su email" size="28" required>
+                        <br><br>
+                    </div>
+                    
+                    
+                    <div class="form-asunto">
+                        <label for="asunto"><strong>Asunto:</strong></label>
+                        <select id="asunto" name="asunto">
+                            <option value="consulta">Consulta General</option>
+                            <option value="pedido">Consulta sobre Pedido</option>
+                            <option value="producto">Información de Producto</option>
+                            <option value="soporte">Soporte Técnico / Garantía</option>
+                        </select>
+                        <br><br>
+                    </div>
+                    
+                    <div class="form-mensaje">
+                        <label for="mensaje"><strong>Tu Mensaje:</strong></label>
+                        <br><br>
+                        <textarea id="mensaje" name="mensaje" rows="3" required></textarea>
+                    </div>
+                    <br>
+                    
+                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                </form>
+            </section>
+            
+            <section class="detalles-contacto">
+                <div class="detalles-item">
+                    <h3>Nuestra Tienda</h3>
+                    <p><strong>Dirección:</strong> Calle Falsa 123, Córdoba, Argentina</p>
+                    <p><strong>Horario:</strong> Lunes a Viernes: 9:00 - 18:00 hs.</p>
+                    <p><strong>Sábados:</strong> 10:00 - 13:00 hs. (Domingos Cerrado)</p>
+                </div>
+
+                <br>
+
+                <div class="detalles-item">
+                    <h3>Llámanos</h3>
+                    <p>Para atención inmediata, llámanos a nuestro número de contacto.</p>
+                    <p >+54 9 11 2345 6789</p>
+                </div>
+            </section>
+
+            <section class="contacto-mapa">
+                <h3>¿Dónde Encontrarnos?</h3>
+                <div class="mapa-ubicacion">
+                    <p>Calle Falsa 123, Cordoba, Argentina (Google Maps)</p> 
+                    </div>
+            </section>
+        </main>
+
+        
+         <footer class="footer">
+            <p>Seguinos en redes</p>
+            <div class="redes">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter / X</a>
+            </div>
+            <p class="copy">© 2025 Smash Tenis — Todos los derechos reservados</p>
+        </footer> 
         <script src="" async defer></script>
     </body>
 </html>

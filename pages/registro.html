@@ -7,32 +7,38 @@
         <title>Formulario de Registro</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="../css/registro.css">
+        <link rel="stylesheet" href="../css/styles2.css">
     </head>
-    <body>
-        <nav>
-             <a href="index.html" class="brand" aria-label="Inicio">🎾 SmashTenis </a>
-                <!-- Tengo q poner un logo mas adelante --> 
-            
-            <ul>
-                <li><a href="../index.html">Bienvenida</a></li>
-                <li><a href="Pages/registro.html">Sumate a la comunidad</a></li>
-                <li><a href="../Pages/login.html">Login</a></li>
-                <li><a href="../Pages/Productos.html">Ver Productos</a></li>                
-                <li><a href="../Pages/QuienesSomos.html">Quienes Somos</a></li>
-                <li><a href="../Pages/contacto.html">Contacto</a></li>
-            </ul>      
-        </nav>
-
+    <body> 
+        <header class="main-header">
+            <div class ="header-left">
+                <a href="../index.html" class="logo">
+                    <img src="../images/Logo Smash Tenis.png" alt="Logo Smash Tenis">
+                </a>
+                <h1 class="titulo">Smash Tenis</h1>
+            </div>
+           
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Pagina Principal</a></li>
+                    <li><a href="../pages/login.html">Login</a></li>
+                    <li><a href="../pages/productos.html">Productos</a></li>
+                    <li><a href="../pages/quienessomos.html">Quiénes Somos</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>        
+           
         <br>
-      <form action="" method="post"> <!--Accion del formulario-->
+        <form action ="" method="post"> <!--Accion del formulario-->
         <h2>Registro de usuario</h2>
         <div>
         <label for="txtNombre">
             <b> <!--En negrita-->
                 Nombre:</label>
             </b>
-            <input type="text" id="txtNombre" name="txtNombre" placeholder="Ingrese su nombre" required>
+            <input type="text"  name="txtNombre" placeholder="Ingrese su nombre" required>
             <br><br> <!--Salto de linea-->
         </div>
            
@@ -41,9 +47,8 @@
             <b>
                 Apellido:</label>
             </b>
-            <input type="text" id="txtApellido" name="txtApellido" placeholder="Ingrese su apellido" required>
+            <input type="text" name="txtApellido" placeholder="Ingrese su apellido" required>
             <br><br>
-            
         </div>
        
         <div>
@@ -51,9 +56,8 @@
                 <b>
                 Correo Electrónico:</label>
                 </b>
-            <input type="email" id="txtEmail" name="txtEmail" placeholder="Ingrese su email"  size="28" required>
+            <input type="email"  name="txtEmail" placeholder="Ingrese su email"  size="28" required>
             <br><br>
-            
         </div>
        
         <div>
@@ -62,9 +66,8 @@
                 Contraseña:</label>
                 </b>
             
-            <input type="password" id="txtPassword" name="txtPassword" placeholder="Ingrese su contraseña" required>
+            <input type="password"  name="txtPassword" placeholder="Ingrese su contraseña" required>
             <br><br>
-            
         </div>
 
         <div>
@@ -73,9 +76,8 @@
                 Repetir Contraseña:</label>
                 </b>
             
-            <input type="password" id="txtPassword2" name="txtPassword2" placeholder="Repita su contraseña" required>
+            <input type="password"  name="txtPassword2" placeholder="Repita su contraseña" required>
             <br><br>
-            
         </div>
 
         <div>
@@ -83,7 +85,7 @@
                 <b>
                 Fecha de Nacimiento:</label>
                 </b>
-            <input type="date" id="txtFechaNacimiento" name="txtFechaNacimiento"  placeholder="DD/MM/AAAA"  required>
+            <input type="date"  name="txtFechaNacimiento"  placeholder="DD/MM/AAAA"  required>
             <br><br>
             
         </div>
@@ -91,9 +93,7 @@
         <div>
             <button type="submit">Registrarse</button>
         </div>
-        
-
-      </form>
+        </form>
         
         <script src="" async defer></script>
     </body>

@@ -1,0 +1,76 @@
+/* PAGINA REGISTRO */
+/* CONTENEDOR PRINCIPAL */
+form {
+  background-color: #ffffff;
+  max-width: 450px;
+  margin: 20px auto; /* centra horizontalmente */
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* TÍTULO */
+form h2 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #0b0d11;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  font-size: 1.7rem;
+}
+
+/* ETIQUETAS */
+form label {
+  font-weight: 500;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* CAMPOS DE ENTRADA */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #2a5298;
+  outline: none;
+}
+
+/* BOTÓN */
+form button {
+  background-color: #2a5298;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1e3d7a;
+}
+
+/* FONDO GENERAL */
+body {
+    background-image: url("../images/CanchaTenisFondoDePantalla.jpg"); /* o la ruta que uses */
+    background-size: cover;      /* cubre toda la pantalla */
+    background-position: center; /* centra la imagen */
+    background-attachment: fixed; /* hace que no se mueva al hacer scroll */
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+   
+}
