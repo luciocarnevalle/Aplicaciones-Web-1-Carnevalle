@@ -6,9 +6,10 @@
         <title>Contacto</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/styles2.css">
-        <link rel="stylesheet" href="../css/quienesSomos.css">
-        <link rel="stylesheet" href="../css/contacto.css">
+        
+         <link rel="stylesheet" href="../css/styles.css">
+        <!-- Fuente de Google -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -37,31 +38,23 @@
                 <p>¿Tienes dudas o necesitas ayuda con tu pedido? Rellena nuestro formulario, llámanos o visítanos.</p>
             </section>
 
-            <section class="formulario">
+            <section class="formulario-contacto">
                 <h3>Envíanos un mensaje, te contactaremos a la brevedad:</h3>
                 <form action ="" method="post">
                     <div class="form-nombre">
-                        <label for="txtNombre">
-                                <b> <!--En negrita-->
-                                    Nombre:</label>
-                                </b>
-                                <input type="text"  name="txtNombre" placeholder="Ingrese su nombre" required>
-                                <br><br> <!--Salto de linea-->
+                        <label for="txtNombre"><b> Nombre:</b></label>
+                        <input type="text"  name="txtNombre" placeholder="Ingrese su nombre" required>
                     </div>
 
                     <div class="form-mail">
-                        <label for="txtEmail">
-                        <b>
-                            Email:
-                        </b>
+                        <label for="txtEmail"> <b>Correo electrónico</b></label>
                         <input type="email" name="txtEmail" placeholder="Ingrese su email" size="28" required>
-                        <br><br>
                     </div>
                     
                     
                     <div class="form-asunto">
                         <label for="asunto"><strong>Asunto:</strong></label>
-                        <select id="asunto" name="asunto">
+                        <select id="asunto" name="asunto" required>
                             <option value="consulta">Consulta General</option>
                             <option value="pedido">Consulta sobre Pedido</option>
                             <option value="producto">Información de Producto</option>
@@ -71,9 +64,8 @@
                     </div>
                     
                     <div class="form-mensaje">
-                        <label for="mensaje"><strong>Tu Mensaje:</strong></label>
-                        <br><br>
-                        <textarea id="mensaje" name="mensaje" rows="3" required></textarea>
+                        <label for="mensaje"><strong>Tu Mensaje:</strong></label> <br>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
                     </div>
                     <br>
                     
@@ -82,7 +74,7 @@
             </section>
             
             <section class="detalles-contacto">
-                <div class="detalles-item">
+                <div class="detalles-items">
                     <h3>Nuestra Tienda</h3>
                     <p><strong>Dirección:</strong> Calle Falsa 123, Córdoba, Argentina</p>
                     <p><strong>Horario:</strong> Lunes a Viernes: 9:00 - 18:00 hs.</p>
@@ -91,7 +83,7 @@
 
                 <br>
 
-                <div class="detalles-item">
+                <div class="detalles-telefono">
                     <h3>Llámanos</h3>
                     <p>Para atención inmediata, llámanos a nuestro número de contacto.</p>
                     <p >+54 9 11 2345 6789</p>

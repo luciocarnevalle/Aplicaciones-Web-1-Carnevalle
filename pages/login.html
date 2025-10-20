@@ -6,12 +6,12 @@
         <title>Formulario de Login</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="../css/login.css">
-        <link rel="stylesheet" href="../css/styles2.css"> -->
-        <link rel="stylesheet" href="../css/SASS.css">
-            <!-- Fuente de Google -->
+       
+        <link rel="stylesheet" href="../css/styles.css">
+        <!-- Fuente de Google -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     </head>
+    
     <body>
          <header class="main-header">
             <div class ="header-left">
@@ -24,32 +24,30 @@
             <nav class="navbar">
                 <ul class="nav-links">
                     <li><a href="../index.html">Pagina Principal</a></li> 
-                    <li><a href= "../pages/">Sumate a la comunidad</a></li>                   
+                    <li><a href= "../pages/registro.html">Sumate a la comunidad</a></li>                   
                     <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a href="../pages/quienessomos.html">Quiénes Somos</a></li>
+                    <li><a href="../pages/quienesSomos.html">Quiénes Somos</a></li>
                     <li><a href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
             </header>        
-                                                                
-        <form class="form" action="" method="post">
+                 
+            
+        <main class="fondo-login"> 
+
+         
+        <form class="form form-login" action="" method="post">
         <h2>Iniciar sesión</h2>
         <div>
-            <label for="txtEmail">
-            <b>
-                Email:
-            </b>
-            <input type="email" name="txtEmail" placeholder="Ingrese su email" size="28" required>
-            <br><br>
+          <label for="txtEmail"><b>Correo electrónico:</b></label>
+          <input type="email" name="txtEmail" placeholder="Ingrese su email" size="28" required>
+           
         </div>
 
         <div>
-            <label for="txtPassword">
-            <b>
-                Contraseña:
-            </b>
+            <label for="txtPassword"><b>Contraseña:</b></label>
             <input type="password"  name="txtPassword" placeholder="Ingrese su contraseña"  required>
-            <br><br>
+            
         </div>        
         
         <div>
@@ -64,10 +62,12 @@
             <br><br>
         </div>
 
-        <div>
+        <div class="link">
             <a href="#">¿Olvidaste tu contraseña?</a>
             <br><br>
         </div>
         </form>
+        </main>
     </body>
+    
 </html>

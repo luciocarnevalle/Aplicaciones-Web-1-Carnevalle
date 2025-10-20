@@ -7,10 +7,9 @@
         <title>Formulario de Registro</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="../css/registro.css">
-        <link rel="stylesheet" href="../css/styles2.css"> -->
-        <link rel="stylesheet" href="../css/SASS.css">
-            <!-- Fuente de Google -->
+
+         <link rel="stylesheet" href="../css/styles.css">
+        <!-- Fuente de Google -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     </head>
     <body> 
@@ -33,61 +32,49 @@
             </nav>
         </header> 
 
-        <section class="fondo-registro">
-
+        <main class="fondo-registro">
+>
         <br>
         <form action ="" method="post"> <!--Accion del formulario-->
-        <h2>Registro de usuario</h2>
+        <h2>Registro de usuario</h2><br>
         <div>
-        <label for="txtNombre">
-            <b> <!--En negrita-->
-                Nombre:</label>
-            </b>
+        <label class="cajastexto" for="txtNombre">
+            <b>Nombre:</b></label>
             <input type="text"  name="txtNombre" placeholder="Ingrese su nombre" required>
-            <br><br> <!--Salto de linea-->
+            <br><br>
         </div>
            
         </div>
             <label for="txtApellido">
-            <b>
-                Apellido:</label>
-            </b>
+            <b>Apellido:</b></label>
             <input type="text" name="txtApellido" placeholder="Ingrese su apellido" required>
             <br><br>
         </div>
        
         <div>
             <label for="txtEmail">
-                <b>
-                Correo Electrónico:</label>
-                </b>
+            <b>Correo Electrónico: </b></label>
             <input type="email"  name="txtEmail" placeholder="Ingrese su email"  size="28" required>
             <br><br>
         </div>
        
         <div>
             <label for="txtPassword"></label>
-                <b>
-                Contraseña:</label>
-                </b>
+            <b>Contraseña:</b></label>
             <input type="password"  name="txtPassword" placeholder="Ingrese su contraseña" required>
             <br><br>
         </div>
 
         <div>
             <label for="txtPassword2"></label>
-                <b>
-                Repetir Contraseña:</label>
-                </b>
+            <b> Repetir Contraseña: </b> </label>
             <input type="password"  name="txtPassword2" placeholder="Repita su contraseña" required>
             <br><br>
         </div>
 
         <div>
             <label for="txtFechaNacimiento">
-                <b>
-                Fecha de Nacimiento:</label>
-                </b>
+            <b>Fecha de Nacimiento:</b></label>
             <input type="date"  name="txtFechaNacimiento"  placeholder="DD/MM/AAAA"  required>
             <br><br>
             
@@ -99,6 +86,6 @@
         </form>
         </section> 
         <script src="" async defer></script>
-         
+        </main> 
     </body>
 </html>

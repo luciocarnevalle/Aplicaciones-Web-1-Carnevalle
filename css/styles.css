@@ -1,5 +1,10 @@
-body {
+@charset "UTF-8";
+/*PAGINA INDEX*/
+* body {
+  margin: 0;
   font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 /* Sección de bienvenida */
@@ -9,8 +14,6 @@ body {
   text-align: center;
   padding: 10px 10px; /* espacio arriba y abajo */
 }
-
-/* Título principal */
 .Bienvenida h1 {
   font-size: 3rem;
   margin-bottom: 10px;
@@ -19,36 +22,16 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
-/* Subtítulo */
-.Subtitulo {
-  font-size: 1,4rem;
+.Bienvenida .Subtitulo {
+  font-size: 1, 4rem;
   line-height: 1.6;
   max-width: 700px;
   margin: 0 auto; /* centra el párrafo */
   font-style: italic;
 }
 
-/* Logo */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 20px; /* espacio entre imagen y texto */
-}
-
-
- .logo img {
-  height: auto;   /*el logo es más grande */
-  width: 140px;
-  position: absolute;
-  top: 50%;       /* lo centra verticalmente */
-  transform: translateY(-50%);
-}
-
-
-
 /* Navbar INDEX */
-.navbar {
+.navbar-index {
   display: flex;
   justify-content: space-between; /* separa logo a la izq y links a la der */
   align-items: center;
@@ -57,7 +40,18 @@ body {
   height: 60px;
   position: relative;
 }
-
+.navbar-index .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* espacio entre imagen y texto */
+}
+.navbar-index img {
+  height: auto; /*el logo es más grande */
+  width: 140px;
+  position: absolute;
+  top: 50%; /* lo centra verticalmente */
+  transform: translateY(-50%);
+}
 
 /* Links */
 .nav-links {
@@ -67,47 +61,33 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .nav-links a {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
 }
-
 .nav-links a:hover {
   color: #0c0b05; /* color al pasar el mouse */
 }
 
-.TituloSecundario {
-  text-align: center;
-  font-size: 2.5rem ;
-  margin-bottom: 2rem;
-  margin-top: 0.5rem;
-  color: #000000;
-}
-
+/* Sección ¿Por qué elegirnos? */
 .porque-elegirnos {
   background-image: url("../images/canchadetenis.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 60px 20px;
-  text-align: center; 
+  text-align: center;
   color: #000000;
 }
-
-.aviso-registro a {
+.porque-elegirnos .TituloSecundario {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
   color: #000000;
-  text-decoration: underline;
-  font-weight: bold;
 }
-
-.aviso-registro a:hover {
-  color: #2c14b6;
-}
-
-
-.Lista {
+.porque-elegirnos .Lista {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -117,50 +97,58 @@ body {
   margin: 0 auto;
   max-width: 900px;
 }
-
-.Lista li {
+.porque-elegirnos .Lista li {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   padding: 1.2rem 1.5rem;
   width: 200px;
   text-align: center;
   font-size: 0.95rem;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
   color: #222;
-}
-
-.Lista li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-}
-
   /* Íconos arriba del texto */
-.Lista li::before {
-  content: "🎾"; 
+}
+.porque-elegirnos .Lista li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.porque-elegirnos .Lista li:before {
+  content: "🎾";
   display: block;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   color: #333;
 }
 
+/* Aviso de registro */
+.aviso-registro {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #000000;
+}
+.aviso-registro a {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.aviso-registro a:hover {
+  color: #2c14b6;
+}
 
-
-/* BOTÓN */
+/* BOTON */
 .boton {
-    background-color: #2a5298;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
+  background-color: #2a5298;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
 }
-
 .boton:hover {
-    background-color: #1b3a6d;
+  color: #1b3a6d;
 }
-
 
 /* FOOTER */
 .footer {
@@ -169,20 +157,17 @@ body {
   text-align: center;
   padding: 25px 10px;
   margin-top: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
 .footer p {
   margin: 8px 0;
 }
-
 .footer .redes {
   margin: 12px 0;
 }
-
 .footer .redes a {
   color: #fff;
   text-decoration: none;
@@ -190,17 +175,331 @@ body {
   font-weight: 500;
   transition: color 0.3s ease;
 }
-
 .footer .redes a:hover {
   color: #ffb347;
   text-decoration: underline;
 }
-
-.copy {
+.footer .copy {
   font-size: 0.85rem;
   opacity: 0.8;
 }
-/* HASTA ACA LA PAGINA DE BIENVENIDA */
 
+/* HASTA ACA LA PAGINA INDEX */
+/* ENCABEZADO GENERAL (todas las páginas salvo index) */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0427c2;
+  padding: 4px 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.main-header .header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-header .header-left .titulo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 40px;
+}
+.main-header .header-left .logo {
+  height: 100px;
+  width: auto;
+}
+.main-header .header-left .logo img {
+  height: 100px;
+  width: auto;
+}
 
+/* PAGINA REGISTRO */
+form {
+  background-color: #ffffff;
+  max-width: 500px;
+  margin: 20px auto; /* centra horizontalmente */
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+form h2 {
+  text-align: center;
+  color: #0b0d11;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  font-size: 1.7rem;
+}
+form label {
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+form input[type=text],
+form input[type=email],
+form input[type=password],
+form input[type=date] {
+  width: 80%;
+  padding: 10px;
+  border: 5px solid #bebdbd;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+form input[type=text]:focus,
+form input[type=email]:focus,
+form input[type=password]:focus,
+form input[type=date]:focus {
+  border-color: #2a5298;
+  outline: none;
+}
+form button {
+  background-color: #2a5298;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+form button:hover {
+  background-color: #1e3d7a;
+}
 
+.fondo-registro {
+  min-height: calc(100vh - 60px);
+  background: url("../images/CanchaTenisFondoDePantalla.jpg") center/cover no-repeat fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* PAGINA LOGIN */
+.link {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 15px;
+  color: #000000;
+}
+.link a {
+  color: #000000;
+  text-decoration: none;
+}
+.link a:hover {
+  color: #000000;
+  font-weight: bold;
+}
+
+.form-login {
+  transform: translate(-350px, -40px); /* izquierda, arriba */
+}
+
+.fondo-login {
+  min-height: calc(100vh - 60px);
+  background: url("../images/CanchaTenisFondo2.jpg") center/cover no-repeat fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* PAGINA PRODUCTOS */
+.TituloProductos h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.TituloProductos p {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Para que sea responsivo */
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+  padding: 20px 40px;
+}
+
+.card1, .card2, .card3 {
+  flex: 1 1 calc(25% - 20px);
+  background-color: #f9f9f9;
+  border: 2px solid #a5a5a5;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card1 img, .card2 img, .card3 img {
+  width: auto;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* PAGINA RAQUETAS-ZAPATILLAS-CUERDAS */
+.TituloMarcas {
+  margin: 0px auto; /* Importante para centrarlo horizontalmente */
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 5px 40px;
+  border-radius: 10px;
+  width: 70%;
+  background-color: #dce2e7;
+}
+.TituloMarcas h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+.TituloMarcas p {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+
+.cardsBabolat, .cardsHead, .cardsWilson, .cardsAsics, .cardsNike, .cardsAdidas, .cardsKirschbaum, .cardsLuxilon, .cardsTecnifibre {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Para que sea responsivo */
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+  padding: 20px 40px;
+}
+
+.card1, .card2, .card3 {
+  flex: 1 1 calc(22% - 20px);
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card1 img, .card2 img, .card3 img {
+  width: 210px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(8, 8, 8, 0.2);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #050608;
+}
+
+.boton-card {
+  background-color: #2a5298;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+/* PAGINA QUIENES SOMOS */
+.contenido {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 10px 60px;
+  background-color: rgba(203, 204, 235, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  line-height: 1.7;
+}
+.contenido h2 {
+  text-align: center;
+  color: #2a5298;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.mision, .lista {
+  text-align: center;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 10px 60px;
+  background-color: rgba(203, 204, 235, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  line-height: 1.7;
+}
+.mision h2, .lista h2 {
+  color: #2a5298;
+  font-size: 1.4rem;
+  margin-top: 1.8rem;
+  font-weight: 600;
+}
+
+.UltimoParrafo {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+/* PAGINA CONTACTO */
+.contacto-introduccion {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contacto-introduccion h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.formulario-contacto h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.detalles-items, .contacto-mapa, .detalles-telefono {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=SASS.css.map */
