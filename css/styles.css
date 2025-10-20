@@ -47,7 +47,7 @@ body {
 
 
 
-/* Navbar general */
+/* Navbar INDEX */
 .navbar {
   display: flex;
   justify-content: space-between; /* separa logo a la izq y links a la der */
@@ -93,7 +93,7 @@ body {
   background-repeat: no-repeat;
   padding: 60px 20px;
   text-align: center; 
-  color: #fff;
+  color: #000000;
 }
 
 .aviso-registro a {

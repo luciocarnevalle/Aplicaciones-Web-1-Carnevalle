@@ -71,6 +71,4 @@ body {
     background-position: center; /* centra la imagen */
     background-attachment: fixed; /* hace que no se mueva al hacer scroll */
     background-repeat: no-repeat;
-    font-family: 'Poppins', sans-serif;
-   
 }
