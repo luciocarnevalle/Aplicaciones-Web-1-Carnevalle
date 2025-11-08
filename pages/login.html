@@ -13,46 +13,32 @@
     </head>
     
     <body>
-         <header class="main-header">
-            <div class ="header-left">
-                <a href="../index.html" class="logo">
-                    <img src="../images/Logo Smash Tenis.png" alt="Logo Smash Tenis">
-                </a>
-                <h1 class="titulo">Smash Tenis</h1>
-            </div>
-           
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="../index.html">Pagina Principal</a></li> 
-                    <li><a href= "../pages/registro.html">Sumate a la comunidad</a></li>                   
-                    <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a href="../pages/quienesSomos.html">Quiénes Somos</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            </header>        
+        <header>
+       
+        </header>
+  
                  
             
         <main class="fondo-login"> 
 
          
-        <form class="form form-login" action="" method="post">
+        <form id="loginForm" class="form form-login">
         <h2>Iniciar sesión</h2>
         <div>
           <label for="txtEmail"><b>Correo electrónico:</b></label>
-          <input type="email" name="txtEmail" placeholder="Ingrese su email" size="28" required>
+          <input  id="txtEmail" type="email" name="txtEmail" placeholder="Ingrese su email" size="28" required>
            
         </div>
 
         <div>
             <label for="txtPassword"><b>Contraseña:</b></label>
-            <input type="password"  name="txtPassword" placeholder="Ingrese su contraseña"  required>
+            <input id="txtPassword" type="password"  name="txtPassword" placeholder="Ingrese su contraseña"  required>
             
         </div>        
         
         <div>
             <label>
-                <input type="checkbox" name="remember"> Recuérdame
+                <input id="rememberCheck" type="checkbox" name="remember"> Recuérdame
             </label>
             <br><br>
         </div>
@@ -68,6 +54,9 @@
         </div>
         </form>
         </main>
+
+        <script type="module" src="../js/login.js"></script>
+        <script type="module" src="../js/navbar.js" ></script>
     </body>
     
 </html>
