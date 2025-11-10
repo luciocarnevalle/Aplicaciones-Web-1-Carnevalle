@@ -114,12 +114,38 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 .porque-elegirnos .Lista li:before {
-  content: "🎾";
+  content: ""; 
   display: block;
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-  color: #333;
+
+  /* tamaño de íconos  */
+  width: 50px; 
+  height: 50px;
+
+  /* Centra el ícono */
+  margin: 0 auto 0.5rem auto;
+
+  /* Configuración para que la imagen se vea bien */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.porque-elegirnos .Lista li.Emoji1:before {
+  background-image: url('/images/atencion.png'); 
+}
+.porque-elegirnos .Lista li.Emoji2:before {
+  background-image: url('/images/consejo.png'); 
+}
+.porque-elegirnos .Lista li.Emoji3:before {
+  background-image: url('/images/envio.png'); 
+}
+.porque-elegirnos .Lista li.Emoji4:before {
+  background-image: url('/images/raqueta.png'); 
+}
+.porque-elegirnos .Lista li.Emoji5:before {
+  background-image: url('/images/descuento.png'); 
+}
+
 
 /* Aviso de registro */
 .aviso-registro {
@@ -148,6 +174,16 @@
 }
 .boton:hover {
   color: #1b3a6d;
+}
+
+.contenedor-btn-productos {
+  text-align: left;
+}
+
+.btn-volver {
+  margin-left: 30px;
+  margin-top: 40px;
+  display: inline-block;
 }
 
 /* FOOTER */
