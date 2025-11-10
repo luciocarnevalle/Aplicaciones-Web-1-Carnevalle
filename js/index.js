@@ -9,7 +9,7 @@ document.getElementById("btnCerrar").addEventListener("click", function (e) {
   // 2. Si el usuario hizo clic en "Aceptar" (estaSeguro es true)...
   if (estaSeguro) {
     localStorage.removeItem("rememberedEmail"); //borro los datos de sesion
-    window.location.href = "/pages/login.html"; //...lo redirigimos
+    window.location.href = "./pages/login.html"; //...lo redirigimos
   }
   // Si hace clic en "Cancelar", no se hace nada.
 });

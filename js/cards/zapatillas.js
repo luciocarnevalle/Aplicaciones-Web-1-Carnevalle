@@ -5,21 +5,21 @@ const zapatillasAsics = [
   {
     id: "asics-01",
     titulo: "Asics Gel Resolution 8",
-    img: "/images/AsicsGelResolution9.jpg",
+    img: "./images/AsicsGelResolution9.jpg",
     descripcion: "La Asics Gel Resolution 8 ofrece una combinación excepcional de estabilidad y durabilidad, ideal para un rendimiento óptimo en la cancha.",
     precio: "150.000"
   },
   {
     id: "asics-02",
     titulo: "Asics Court FF 2",
-    img: "/images/AsicsCourtFF2.webp",
+    img: "./images/AsicsCourtFF2.webp",
     descripcion: "La Asics Court FF 2 es una zapatilla ligera y cómoda, diseñada para ofrecer un excelente soporte lateral y una respuesta rápida en la cancha.",
     precio: "130.000"
   },
   {
     id: "asics-03",
     titulo: "Asics Gel Dedicate 7",
-    img: "/images/AsicsGelDedicate7.webp",
+    img: "./images/AsicsGelDedicate7.webp",
     descripcion: "La Asics Gel Dedicate 7 es una zapatilla confiable, perfecta para jugadores recreativos que buscan comodidad y buen rendimiento en la cancha.",
     precio: "110.000"
   }
@@ -29,21 +29,21 @@ const zapatillasNike = [
   {
     id: "nike-01",
     titulo: "Nike Air Zoom Vapor X",
-    img: "/images/NikeAirZoomVaporX.webp",
+    img: "./images/NikeAirZoomVaporX.webp",
     descripcion: "La Nike Air Zoom Vapor X es una zapatilla ligera y rápida, ofrece una excelente tracción y soporte durante movimientos rápidos en la cancha.",
     precio: "160.000"
   },
   {
     id: "nike-02",
     titulo: "Nike Air Zoom Cage 4",
-    img: "/images/NikeAirZoomCage4.webp",
+    img: "./images/NikeAirZoomCage4.webp",
     descripcion: "La Nike Air Zoom Cage 4 es una zapatilla duradera y estable, ideal para jugadores que buscan soporte adicional y resistencia en la cancha.",
     precio: "170.000"
   },
   {
     id: "nike-03",
     titulo: "Nike Court Lite 2",
-    img: "/images/NikeCourtLite2.jpg",
+    img: "./images/NikeCourtLite2.jpg",
     descripcion: "La Nike Court Lite 2 es una zapatilla asequible, perfecta para jugadores principiantes que buscan buen rendimiento y estilo en la cancha.",
     precio: "140.000"
   }
@@ -53,21 +53,21 @@ const zapatillasAdidas = [
   {
     id: "adidas-01",
     titulo: "Adidas Adizero Ubersonic 4",
-    img: "/images/AdidasAdizeroUbersonic4.jpg",
+    img: "./images/AdidasAdizeroUbersonic4.jpg",
     descripcion: "La Adidas Adizero Ubersonic 4 es una zapatilla ultraligera que ofrece una gran velocidad y agilidad en la cancha...",
     precio: "155.000"
   },
   {
     id: "adidas-02",
     titulo: "Adidas Barricade Boost",
-    img: "/images/AdidasBarricadeBoost.jpg",
+    img: "./images/AdidasBarricadeBoost.jpg",
     descripcion: "La Adidas Barricade Boost es una zapatilla robusta y estable, diseñada para ofrecer un excelente soporte, amortiguacion y durabilidad...",
     precio: "165.000"
   },
   {
     id: "adidas-03",
     titulo: "Adidas GameCourt",
-    img: "/images/AdidasGameCourt.webp",
+    img: "./images/AdidasGameCourt.webp",
     descripcion: "La Adidas GameCourt es una zapatilla versátil y cómoda, perfecta para jugadores recreativos que buscan buen rendimiento y estilo...",
     precio: "125.000"
   }

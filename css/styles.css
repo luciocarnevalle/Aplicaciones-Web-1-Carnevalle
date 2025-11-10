@@ -131,19 +131,19 @@
 }
 
 .porque-elegirnos .Lista li.Emoji1:before {
-  background-image: url('/images/atencion.png'); 
+  background-image: url('./images/atencion.png'); 
 }
 .porque-elegirnos .Lista li.Emoji2:before {
-  background-image: url('/images/consejo.png'); 
+  background-image: url('./images/consejo.png'); 
 }
 .porque-elegirnos .Lista li.Emoji3:before {
-  background-image: url('/images/envio.png'); 
+  background-image: url('./images/envio.png'); 
 }
 .porque-elegirnos .Lista li.Emoji4:before {
-  background-image: url('/images/raqueta.png'); 
+  background-image: url('./images/raqueta.png'); 
 }
 .porque-elegirnos .Lista li.Emoji5:before {
-  background-image: url('/images/descuento.png'); 
+  background-image: url('./images/descuento.png'); 
 }
 
 

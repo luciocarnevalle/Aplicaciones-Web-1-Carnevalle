@@ -3,7 +3,7 @@ export function botonVolver() {
 
   if (backButton) {
     backButton.addEventListener('click', () => {
-      window.location.href = '/pages/productos.html';
+      window.location.href = './pages/productos.html';
     });
   }
 }
