@@ -131,7 +131,7 @@
 }
 
 .porque-elegirnos .Lista li.Emoji1:before {
-  background-image: url('./images/atencion.png'); 
+  background-image: url('../images/atencion.png'); 
 }
 .porque-elegirnos .Lista li.Emoji2:before {
   background-image: url('./images/consejo.png'); 
