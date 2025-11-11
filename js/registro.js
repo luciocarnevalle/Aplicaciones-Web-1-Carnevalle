@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       
       alert("¡Te has registrado con éxito! Ahora, por favor, inicia sesión.");
-      window.location.href = "./pages/login.html"; 
+      window.location.href = "../pages/login.html"; 
     });
   }
 });

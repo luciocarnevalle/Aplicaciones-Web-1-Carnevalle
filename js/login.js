@@ -13,5 +13,8 @@ if (remember) { //si el checkbox está seleccionado
     localStorage.removeItem("rememberedEmail");
   }
 
-window.location.href = "./index.html"; //redirecciono a la página principal
+window.location.href = "/index.html"; //redirecciono a la página principal
+
+
+//falta cartelito de "inicio de sesión exitoso" o bienvenido + nombre de usuario
 });
