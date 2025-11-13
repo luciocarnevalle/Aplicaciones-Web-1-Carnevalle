@@ -1,6 +1,6 @@
 import { botonVolver } from '../btn-volver.js';
 
-
+/*
 const zapatillasAsics = [
   {
     id: "asics-01",
@@ -71,7 +71,7 @@ const zapatillasAdidas = [
     descripcion: "La Adidas GameCourt es una zapatilla versátil y cómoda, perfecta para jugadores recreativos que buscan buen rendimiento y estilo...",
     precio: "125.000"
   }
-];
+];*/
 
 
 function crearProductoCard(producto, index) {
@@ -124,30 +124,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
   botonVolver();
   
-  // Pinto las tres secciones de productos
-  renderizarProductos(zapatillasAsics, ".cardsAsics");
-  renderizarProductos(zapatillasNike, ".cardsNike");
-  renderizarProductos(zapatillasAdidas, ".cardsAdidas");
+  fetch('/data/productos.json')
+      .then(response => response.json()) 
+      .then(productos => { 
+          
+          const todasLasZapatillas = productos.filter(p => p.categoria === 'zapatillas');
 
-  //Añado la lógica para los botones de cantidad (+ / -)
+          const zapatillasAsics = todasLasZapatillas.filter(p => p.marca === 'asics');
+          const zapatillasNike = todasLasZapatillas.filter(p => p.marca === 'nike');
+          const zapatillasAdidas = todasLasZapatillas.filter(p => p.marca === 'adidas');
+
+          renderizarProductos(zapatillasAsics, ".cardsAsics");
+          renderizarProductos(zapatillasNike, ".cardsNike");
+          renderizarProductos(zapatillasAdidas, ".cardsAdidas");
+      })
+      .catch(error => console.error("Error al cargar los productos:", error));
+
+
   document.body.addEventListener("click", (e) => {
     
-    // Verificamos si el clic fue en un botón de cantidad
+    
     const botonCantidad = e.target.closest(".cantidad-selector__btn");
     
     if (botonCantidad) {
-      e.preventDefault(); // Previene cualquier acción por defecto
-      const accion = botonCantidad.dataset.accion; // "sumar" o "restar"
+      e.preventDefault(); 
+      const accion = botonCantidad.dataset.accion; 
       const input = botonCantidad.parentElement.querySelector(".cantidad-selector__numero");
       
       let valor = parseInt(input.value);
 
       if (accion === "sumar") {
         valor++;
-      } else if (accion === "restar" && valor > 1) { // No permite bajar de 1
+      } else if (accion === "restar" && valor > 1) {
         valor--;
       }
-      
       input.value = valor;
     }
     

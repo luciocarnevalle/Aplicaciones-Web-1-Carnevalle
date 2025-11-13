@@ -1,5 +1,6 @@
 import { botonVolver } from '../btn-volver.js';
 
+/*
 const cuerdasKirschbaum = [
   {
     id: "kirs-01",
@@ -71,6 +72,7 @@ const cuerdasTecnifibre = [
     precio: "80.000"
   }
 ];
+*/
 
 function crearProductoCard(producto, index) {
   const cardClass = `card${index + 1}`; 
@@ -114,9 +116,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   botonVolver();
   
-  renderizarProductos(cuerdasKirschbaum, ".cardsKirschbaum");
-  renderizarProductos(cuerdasLuxilon, ".cardsLuxilon");
-  renderizarProductos(cuerdasTecnifibre, ".cardsTecnifibre");
+   fetch('/data/productos.json')
+      .then(response => response.json()) 
+      .then(productos => { 
+         
+          const todasLasZapatillas = productos.filter(p => p.categoria === 'cuerdas');
+
+          const cuerdasKirschbaum = todasLasZapatillas.filter(p => p.marca === 'kirschbaum');
+          const cuerdasLuxilon = todasLasZapatillas.filter(p => p.marca === 'luxilon');
+          const cuerdasTecnifibre = todasLasZapatillas.filter(p => p.marca === 'tecnifibre');
+
+          renderizarProductos(cuerdasKirschbaum, ".cardsKirschbaum");
+          renderizarProductos(cuerdasLuxilon, ".cardsLuxilon");
+          renderizarProductos(cuerdasTecnifibre, ".cardsTecnifibre");
+      })
+      .catch(error => console.error("Error al cargar los productos:", error));
 
   document.body.addEventListener("click", (e) => {
     

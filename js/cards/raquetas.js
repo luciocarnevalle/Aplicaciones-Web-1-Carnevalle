@@ -1,5 +1,6 @@
 import { botonVolver } from '../btn-volver.js';
 
+/*
 const raquetasBabolat = [
   {
     id: "babo-01",
@@ -71,6 +72,7 @@ const raquetasHead = [
     precio: "260.000"
   }
 ];
+*/
 
 function crearProductoCard(producto, index) {
   const cardClass = `card${index + 1}`; 
@@ -112,16 +114,32 @@ function renderizarProductos(productos, selectorContenedor) {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    botonVolver();
+  botonVolver();
   
-  renderizarProductos(raquetasBabolat, ".cardsBabolat");
-  renderizarProductos(raquetasWilson, ".cardsWilson");
-  renderizarProductos(raquetasHead, ".cardsHead");
+   fetch('/data/productos.json')
+      .then(response => response.json()) // Convertimos la respuesta a JSON
+      .then(productos => { // 'productos' es ahora un array con TODOS los productos
+          
+          //Filtro solo las zapatillas
+          const todasLasZapatillas = productos.filter(p => p.categoria === 'raquetas');
+
+          //Filtro por marca
+          const raquetasBabolat = todasLasZapatillas.filter(p => p.marca === 'babolat');
+          const raquetasWilson = todasLasZapatillas.filter(p => p.marca === 'wilson');
+          const raquetasHead = todasLasZapatillas.filter(p => p.marca === 'head');
+
+          //Renderizo como antes
+          renderizarProductos(raquetasBabolat, ".cardsBabolat");
+          renderizarProductos(raquetasWilson, ".cardsWilson");
+          renderizarProductos(raquetasHead, ".cardsHead");
+      })
+      .catch(error => console.error("Error al cargar los productos:", error));
 
   document.body.addEventListener("click", (e) => {
     
     const botonCantidad = e.target.closest(".cantidad-selector__btn");
     
+    //logica boton cantidad
     if (botonCantidad) {
       e.preventDefault(); 
       const accion = botonCantidad.dataset.accion;
