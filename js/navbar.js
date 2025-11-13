@@ -4,7 +4,9 @@ export const paginas = [
   { titulo: "Registro", url: "../pages/registro.html" },
   { titulo: "Quiénes Somos", url: "../pages/quienesSomos.html" },
   { titulo: "Productos", url: "../pages/productos.html" },
-  { titulo: "Contacto", url: "../pages/contacto.html" },
+  { titulo: "Carrito", url: "../pages/carrito.html" },
+  { titulo: "Contacto", url: "../pages/contacto.html" }
+  
 ];
 
 export const linksHTML = paginas

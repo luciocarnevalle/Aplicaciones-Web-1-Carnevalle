@@ -4,7 +4,7 @@
     "categoria": "raquetas",
     "marca": "babolat",
     "titulo": "Babolat Pure Aero",
-    "img": "./images/PureAero.jpg",
+    "img": "../images/PureAero.jpg",
     "descripcion": "La raqueta preferida por Rafael Nadal, diseñada para maximizar el efecto y la potencia en cada golpe. Jugadores de todo tipo de niveles",
     "precio": "220.000"
   },
@@ -13,7 +13,7 @@
     "categoria": "raquetas",
     "marca": "babolat",
     "titulo": "Babolat Pure Drive",
-    "img": "./images/PureDrive.jpg",
+    "img": "../images/PureDrive.jpg",
     "descripcion": "Una raqueta versátil que ofrece un equilibrio perfecto entre mucha potencia y control, ideal para jugadores de todos los niveles.",
     "precio": "180.000"
   },
@@ -22,7 +22,7 @@
     "categoria": "raquetas",
     "marca": "babolat",
     "titulo": "Babolat Pure Strike",
-    "img": "./images/PureStrike.webp",
+    "img": "../images/PureStrike.webp",
     "descripcion": "Diseñada para jugadores agresivos que buscan precisión y control en sus golpes, con una sensación sólida en cada impacto.",
     "precio": "200.000"
   },
@@ -31,7 +31,7 @@
     "categoria": "raquetas",
     "marca": "wilson",
     "titulo": "Wilson Pro Staff",
-    "img": "./images/ProStaff.webp",
+    "img": "../images/ProStaff.webp",
     "descripcion": "La elección de Roger Federer, esta raqueta ofrece un control excepcional y una sensación clásica para jugadores que valoran la precisión.",
     "precio": "250.000"
   },
@@ -40,7 +40,7 @@
     "categoria": "raquetas",
     "marca": "wilson",
     "titulo": "Wilson Blade",
-    "img": "./images/WilsonBlade.jpg",
+    "img": "../images/WilsonBlade.jpg",
     "descripcion": "Diseñada para jugadores agresivos, la Wilson Blade ofrece un equilibrio perfecto entre potencia y control, ideal para golpes rápidos y precisos.",
     "precio": "230.000"
   },
@@ -49,7 +49,7 @@
     "categoria": "raquetas",
     "marca": "wilson",
     "titulo": "Wilson Clash",
-    "img": "./images/WilsonClash.jpg",
+    "img": "../images/WilsonClash.jpg",
     "descripcion": "La Wilson Clash proporciona flexibiliad, una sensación cómoda y un gran control, perfecta para jugadores que buscan versatilidad en su juego.",
     "precio": "190.000"
   },
@@ -58,7 +58,7 @@
     "categoria": "raquetas",
     "marca": "head",
     "titulo": "Head Radical",
-    "img": "./images/HeadRadical.webp",
+    "img": "../images/HeadRadical.webp",
     "descripcion": "Esta raqueta combina potencia y estabilidad, ideal para jugadores que buscan un rendimiento equilibrado en la cancha.",
     "precio": "210.000"
   },
@@ -67,7 +67,7 @@
     "categoria": "raquetas",
     "marca": "head",
     "titulo": "Head Speed",
-    "img": "./images/HeadSpeed.webp",
+    "img": "../images/HeadSpeed.webp",
     "descripcion": "La raqueta preferida por Novak Djokovic, diseñada para ofrecer velocidad y precisión en cada golpe, perfecta para jugadores agresivos.",
     "precio": "240.000"
   },
@@ -76,7 +76,7 @@
     "categoria": "raquetas",
     "marca": "head",
     "titulo": "Head Prestige",
-    "img": "./images/HeadPrestige.jpg",
+    "img": "../images/HeadPrestige.jpg",
     "descripcion": "Ofrece un control excepcional y una sensación sólida en el impacto, ideal para jugadores que valoran la precisión y el toque en su juego.",
     "precio": "260.000"
   },
@@ -85,7 +85,7 @@
     "categoria": "zapatillas",
     "marca": "asics",
     "titulo": "Asics Gel Resolution 8",
-    "img": "./images/AsicsGelResolution9.jpg",
+    "img": "../images/AsicsGelResolution9.jpg",
     "descripcion": "La Asics Gel Resolution 8 ofrece una combinación excepcional de estabilidad y durabilidad, ideal para un rendimiento óptimo en la cancha.",
     "precio": "150.000"
   },
@@ -94,7 +94,7 @@
     "categoria": "zapatillas",
     "marca": "asics",
     "titulo": "Asics Court FF 2",
-    "img": "./images/AsicsCourtFF2.webp",
+    "img": "../images/AsicsCourtFF2.webp",
     "descripcion": "La Asics Court FF 2 es una zapatilla ligera y cómoda, diseñada para ofrecer un excelente soporte lateral y una respuesta rápida en la cancha.",
     "precio": "130.000"
   },
@@ -103,7 +103,7 @@
     "categoria": "zapatillas",
     "marca": "asics",
     "titulo": "Asics Gel Dedicate 7",
-    "img": "./images/AsicsGelDedicate7.webp",
+    "img": "../images/AsicsGelDedicate7.webp",
     "descripcion": "La Asics Gel Dedicate 7 es una zapatilla confiable, perfecta para jugadores recreativos que buscan comodidad y buen rendimiento en la cancha.",
     "precio": "110.000"
   },
@@ -112,7 +112,7 @@
     "categoria": "zapatillas",
     "marca": "nike",
     "titulo": "Nike Air Zoom Vapor X",
-    "img": "./images/NikeAirZoomVaporX.webp",
+    "img": "../images/NikeAirZoomVaporX.webp",
     "descripcion": "La Nike Air Zoom Vapor X es una zapatilla ligera y rápida, ofrece una excelente tracción y soporte durante movimientos rápidos en la cancha.",
     "precio": "160.000"
   },
@@ -121,7 +121,7 @@
     "categoria": "zapatillas",
     "marca": "nike",
     "titulo": "Nike Air Zoom Cage 4",
-    "img": "./images/NikeAirZoomCage4.webp",
+    "img": "../images/NikeAirZoomCage4.webp",
     "descripcion": "La Nike Air Zoom Cage 4 es una zapatilla duradera y estable, ideal para jugadores que buscan soporte adicional y resistencia en la cancha.",
     "precio": "170.000"
   },
@@ -130,7 +130,7 @@
     "categoria": "zapatillas",
     "marca": "nike",
     "titulo": "Nike Court Lite 2",
-    "img": "./images/NikeCourtLite2.jpg",
+    "img": "../images/NikeCourtLite2.jpg",
     "descripcion": "La Nike Court Lite 2 es una zapatilla asequible, perfecta para jugadores principiantes que buscan buen rendimiento y estilo en la cancha.",
     "precio": "140.000"
   },
@@ -139,7 +139,7 @@
     "categoria": "zapatillas",
     "marca": "adidas",
     "titulo": "Adidas Adizero Ubersonic 4",
-    "img": "./images/AdidasAdizeroUbersonic4.jpg",
+    "img": "../images/AdidasAdizeroUbersonic4.jpg",
     "descripcion": "La Adidas Adizero Ubersonic 4 es una zapatilla ultraligera que ofrece una gran velocidad y agilidad en la cancha...",
     "precio": "155.000"
   },
@@ -148,7 +148,7 @@
     "categoria": "zapatillas",
     "marca": "adidas",
     "titulo": "Adidas Barricade Boost",
-    "img": "./images/AdidasBarricadeBoost.jpg",
+    "img": "../images/AdidasBarricadeBoost.jpg",
     "descripcion": "La Adidas Barricade Boost es una zapatilla robusta y estable, diseñada para ofrecer un excelente soporte, amortiguacion y durabilidad...",
     "precio": "165.000"
   },
@@ -157,7 +157,7 @@
     "categoria": "zapatillas",
     "marca": "adidas",
     "titulo": "Adidas GameCourt",
-    "img": "./images/AdidasGameCourt.webp",
+    "img": "../images/AdidasGameCourt.webp",
     "descripcion": "La Adidas GameCourt es una zapatilla versátil y cómoda, perfecta para jugadores recreativos que buscan buen rendimiento y estilo...",
     "precio": "125.000"
   },
@@ -166,7 +166,7 @@
     "categoria": "cuerdas",
     "marca": "kirschbaum",
     "titulo": "Kirschbaum Pro Line II",
-    "img": "./images/KirschbaumProLineII.jpg",
+    "img": "../images/KirschbaumProLineII.jpg",
     "descripcion": "Una cuerda fabricada de  copoliéster que ofrece control, efecto y una sensación cómoda. Perfecta para quienes buscan potencia equilibrada y durabilidad.",
     "precio": "80.000"
   },
@@ -175,7 +175,7 @@
     "categoria": "cuerdas",
     "marca": "kirschbaum",
     "titulo": "Kirschbaum Max Power",
-    "img": "./images/KirschbaumMaxPower.jpg",
+    "img": "../images/KirschbaumMaxPower.jpg",
     "descripcion": "Una cuerda de poliéster diseñada para ofrecer control y durabilidad, ideal para jugadores agresivos y potentes que buscan precisión en sus golpes.",
     "precio": "90.000"
   },
@@ -184,7 +184,7 @@
     "categoria": "cuerdas",
     "marca": "kirschbaum",
     "titulo": "Kirschbaum Soft Ace",
-    "img": "./images/KirschbaumEvolution.jpg",
+    "img": "../images/KirschbaumEvolution.jpg",
     "descripcion": "Una cuerda híbrida que combina la suavidad de un multifilamento con la durabilidad de un poliéster, ofreciendo un excelente confort y rendimiento.",
     "precio": "75.000"
   },
@@ -193,7 +193,7 @@
     "categoria": "cuerdas",
     "marca": "luxilon",
     "titulo": "Luxilon ALU Power",
-    "img": "./images/LuxilonAluPower.webp",
+    "img": "../images/LuxilonAluPower.webp",
     "descripcion": "Esta cuerda ofrece una potencia y control increible, utilizada y recomendada por muchos jugadores profesionales en todo el mundo.",
     "precio": "120.000"
   },
@@ -202,7 +202,7 @@
     "categoria": "cuerdas",
     "marca": "luxilon",
     "titulo": "Luxilon Big Banger Original",
-    "img": "./images/LuxilonBigBangerOriginal.jpg",
+    "img": "../images/LuxilonBigBangerOriginal.jpg",
     "descripcion": "Una cuerda que proporciona un excelente control, durabilidad y mucha sensibilidad, ideal para jugadores que buscan precisión en sus golpes.",
     "precio": "110.000"
   },
@@ -211,7 +211,7 @@
     "categoria": "cuerdas",
     "marca": "luxilon",
     "titulo": "Luxilon 4G",
-    "img": "./images/Luxilon4G.webp",
+    "img": "../images/Luxilon4G.webp",
     "descripcion": "Esta cuerda garantiza una sensación más suave y mayor potencia, ideal para jugadores que buscan un equilibrio entre confort y rendimiento.",
     "precio": "115.000"
   },
@@ -220,7 +220,7 @@
     "categoria": "cuerdas",
     "marca": "tecnifibre",
     "titulo": "Tecnifibre X-One Biphase",
-    "img": "./images/TecnifibreXOneBiphase.jpg",
+    "img": "../images/TecnifibreXOneBiphase.jpg",
     "descripcion": "Una cuerda multifilamento que ofrece una excelente combinación de potencia y confort, ideal para jugadores que buscan un rendimiento equilibrado.",
     "precio": "85.000"
   },
@@ -229,7 +229,7 @@
     "categoria": "cuerdas",
     "marca": "tecnifibre",
     "titulo": "Tecnifibre Black Code",
-    "img": "./images/TecnifibreBlackCode.jpg",
+    "img": "../images/TecnifibreBlackCode.jpg",
     "descripcion": "Una cuerda de poliéster diseñada exclusivamente para ofrecer control y durabilidad, ideal para jugadores agresivos que buscan precisión en sus golpes.",
     "precio": "95.000"
   },
@@ -238,7 +238,7 @@
     "categoria": "cuerdas",
     "marca": "tecnifibre",
     "titulo": "Tecnifibre NRG2",
-    "img": "./images/TecnifibreNRG2.jpg",
+    "img": "../images/TecnifibreNRG2.jpg",
     "descripcion": "Una cuerda híbrida que combina la suavidad de un multifilamento con la durabilidad de un poliéster, ofreciendo un excelente confort y rendimiento.",
     "precio": "80.000"
   }
