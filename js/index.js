@@ -5,6 +5,23 @@ import { navbar } from "./navbar.js";
 function crearProductoCard(producto, index) {
   const cardClass = `card${index + 1}`; 
 
+  let urlDestino = '#'; //link por defecto
+
+  //El urlDestino es pa que el boton Ver Mas lleve a la página correcta según la categoría
+  switch (producto.categoria) {
+    case 'raquetas':
+      urlDestino = '../pages/raquetas.html';
+      break;
+    case 'zapatillas':
+      urlDestino = '../pages/zapatillas.html';
+      break;
+    case 'cuerdas':
+      urlDestino = '../pages/cuerdas.html';
+      break;
+    default:
+      urlDestino = '../pages/productos.html';
+  }
+
   return `
     <div class="${cardClass}">
         <h3>${producto.titulo}</h3>
@@ -12,15 +29,17 @@ function crearProductoCard(producto, index) {
         <p>${producto.descripcion}</p>
         <div class="card-footer">
             <p class="precio">$${producto.precio}</p> 
-            <a href="#" class="boton-card" data-id-producto="${producto.id}">Ver más</a>
+            <a href="${urlDestino}" class="boton-card" data-id-producto="${producto.id}">Ver más</a>
         </div>
     </div>
   `;
 }
 
+//localstorage guarda para siempre, sessionstorage solo para la sesión actual
+//cambio todo de local storage a session storage (Entrega 5)
 document.addEventListener("DOMContentLoaded", () => {
-  const justLoggedIn = localStorage.getItem("justLoggedIn");
-  const currentUserEmail = localStorage.getItem("currentUserEmail");
+  const justLoggedIn = sessionStorage.getItem("justLoggedIn");
+  const currentUserEmail = sessionStorage.getItem("currentUserEmail");
   const seccionProductos = document.getElementById("productos-destacados");
   const contenedorProductos = document.getElementById("productos-destacados-container");
 
@@ -29,11 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentUserEmail) {
       alert(`¡Bienvenido, ${currentUserEmail}!`);
     }
-    localStorage.removeItem("justLoggedIn");
+    sessionStorage.removeItem("justLoggedIn");
   }
 
   
-  // Si el usuario está logueado...
+  // Si el usuario está logueado
   if (currentUserEmail && seccionProductos && contenedorProductos) {
     
     //Muestro sección de productos
@@ -71,9 +90,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const estaSeguro = window.confirm("¿Estás seguro que quieres cerrar sesión?");
       
       if (estaSeguro) {
-        localStorage.removeItem("currentUserEmail"); 
-        localStorage.removeItem("justLoggedIn"); 
-        window.location.href = "/pages/login.html"; 
+        sessionStorage.removeItem("currentUserEmail"); 
+        sessionStorage.removeItem("justLoggedIn"); 
+        window.location.href = "../pages/login.html"; 
       }
     });
   }

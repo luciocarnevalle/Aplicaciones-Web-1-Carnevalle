@@ -14,13 +14,10 @@ if (remember) { //si el checkbox está seleccionado
     localStorage.removeItem("rememberedEmail");
   }
 
-  //Guardo el email del usuario 
-  localStorage.setItem("currentUserEmail", email);
-  //Creo la "bandera" para el mensaje de bienvenida
-  localStorage.setItem("justLoggedIn", "true");
+  //Guardo el email del usuario en sessio storage
+  sessionStorage.setItem("currentUserEmail", email);
+  //Creo la "bandera" para el mensaje de bienvenida tmb en session storage
+  sessionStorage.setItem("justLoggedIn", "true");
 
 window.location.href = "/index.html"; //redirecciono a la página principal
-
-
-//falta cartelito de "inicio de sesión exitoso" o bienvenido + nombre de usuario
 });

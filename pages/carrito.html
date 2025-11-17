@@ -10,17 +10,26 @@
 <body>
     <header></header>
 
-    <main class="carrito-container">
-    <h2>Carrito de compras</h2>
+    <main class="carrito-main">
+        <h2>Tu Carrito de Compras</h2>
+
+        <div id="carrito-productos-container"></div>
+            
+
+        <div id="carrito-vacio" style="display: none;">
+            <p>Tu carrito está vacío.</p>
+            <a href="../pages/productos.html" class="btn-volver">Volver a la tienda</a>
+        </div>
+
+        <div id="carrito-footer">
+            <p class="carrito-total-texto">Total: <span id="carrito-total-monto">$0</span></p>
+            <button id="btn-vaciar-carrito" class="btn-rojo">Vaciar Carrito</button>
+            <button id="btn-comprar" class="btn-verde">Finalizar Compra</button>
+        </div>
     </main>
-    <br><br><br><br><br>
 
 
-
-
-
-
-
+    
     <footer class="footer">
             <p>Seguinos en redes</p>
             <div class="redes">

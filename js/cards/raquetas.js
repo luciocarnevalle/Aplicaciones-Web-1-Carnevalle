@@ -1,78 +1,8 @@
 import { botonVolver } from '../btn-volver.js';
 
-/*
-const raquetasBabolat = [
-  {
-    id: "babo-01",
-    titulo: "Babolat Pure Aero",
-    img: "../images/PureAero.jpg",
-    descripcion: "La raqueta preferida por Rafael Nadal, diseñada para maximizar el efecto y la potencia en cada golpe. Jugadores de todo tipo de niveles",
-    precio: "220.000"
-  },
-  {
-    id: "babo-02",
-    titulo: "Babolat Pure Drive",
-    img: "../images/PureDrive.jpg",
-    descripcion: "Una raqueta versátil que ofrece un equilibrio perfecto entre mucha potencia y control, ideal para jugadores de todos los niveles.",
-    precio: "180.000"
-  },
-  {
-    id: "babo-03",
-    titulo: "Babolat Pure Strike",
-    img: "../images/PureStrike.webp",
-    descripcion: "Diseñada para jugadores agresivos que buscan precisión y control en sus golpes, con una sensación sólida en cada impacto.",
-    precio: "200.000"
-  }
-];
 
-const raquetasWilson = [
-  {
-    id: "wils-01",
-    titulo: "Wilson Pro Staff",
-    img: "../images/ProStaff.webp",
-    descripcion: "La elección de Roger Federer, esta raqueta ofrece un control excepcional y una sensación clásica para jugadores que valoran la precisión.",
-    precio: "250.000"
-  },
-  {
-    id: "wils-02",
-    titulo: "Wilson Blade",
-    img: "../images/WilsonBlade.jpg",
-    descripcion: "Diseñada para jugadores agresivos, la Wilson Blade ofrece un equilibrio perfecto entre potencia y control, ideal para golpes rápidos y precisos.",
-    precio: "230.000"
-  },
-  {
-    id: "wils-03",
-    titulo: "Wilson Clash",
-    img: "../images/WilsonClash.jpg",
-    descripcion: "La Wilson Clash proporciona flexibiliad, una sensación cómoda y un gran control, perfecta para jugadores que buscan versatilidad en su juego.",
-    precio: "190.000"
-  }
-];
 
-const raquetasHead = [
-  {
-    id: "head-01",
-    titulo: "Head Radical",
-    img: "../images/HeadRadical.webp",
-    descripcion: "Esta raqueta combina potencia y estabilidad, ideal para jugadores que buscan un rendimiento equilibrado en la cancha.",
-    precio: "210.000"
-  },
-  {
-    id: "head-02",
-    titulo: "Head Speed",
-    img: "../images/HeadSpeed.webp",
-    descripcion: "La raqueta preferida por Novak Djokovic, diseñada para ofrecer velocidad y precisión en cada golpe, perfecta para jugadores agresivos.",
-    precio: "240.000"
-  },
-  {
-    id: "head-03",
-    titulo: "Head Prestige",
-    img: "../images/HeadPrestige.jpg",
-    descripcion: "Ofrece un control excepcional y una sensación sólida en el impacto, ideal para jugadores que valoran la precisión y el toque en su juego.",
-    precio: "260.000"
-  }
-];
-*/
+
 
 function crearProductoCard(producto, index) {
   const cardClass = `card${index + 1}`; 
@@ -112,6 +42,9 @@ function renderizarProductos(productos, selectorContenedor) {
   contenedor.innerHTML = html;
 }
 
+
+let todosLosProductos = [];
+
 document.addEventListener("DOMContentLoaded", () => {
 
   botonVolver();
@@ -119,7 +52,9 @@ document.addEventListener("DOMContentLoaded", () => {
    fetch('/data/productos.json')
       .then(response => response.json()) // Convertimos la respuesta a JSON
       .then(productos => { // 'productos' es ahora un array con TODOS los productos
-          
+
+          todosLosProductos = productos;
+
           //Filtro solo las zapatillas
           const todasLasZapatillas = productos.filter(p => p.categoria === 'raquetas');
 
@@ -155,5 +90,54 @@ document.addEventListener("DOMContentLoaded", () => {
       
       input.value = valor;
     }
+
+
+
+
+
+
+    //LOGICA PARA AGREGAR AL CARRITO
+    const botonCarrito = e.target.closest(".boton-card");
+    if (botonCarrito) {
+      e.preventDefault(); 
+
+      
+      const card = botonCarrito.closest('div[class^="card"]'); 
+      const inputCantidad = card.querySelector('.cantidad-selector__numero');
+      
+      const idProducto = botonCarrito.dataset.idProducto;
+      const cantidad = parseInt(inputCantidad.value);
+      
+
+      const productoParaAgregar = todosLosProductos.find(p => p.id === idProducto);
+
+      if (!productoParaAgregar) {
+        console.error("No se encontró el producto");
+        return;
+      }
+
+
+      let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+     
+      const productoEnCarrito = carrito.find(p => p.id === idProducto);
+
+      if (productoEnCarrito) {
+    
+        productoEnCarrito.cantidad += cantidad;
+      } else {
+      
+        const productoConCantidad = {
+          ...productoParaAgregar, 
+          cantidad: cantidad
+        };
+        carrito.push(productoConCantidad);
+      }
+      localStorage.setItem('carrito', JSON.stringify(carrito));
+
+      alert(`Agregaste ${cantidad} "${productoParaAgregar.titulo}" al carrito.`);
+      
+      inputCantidad.value = 1;
+      }
   });
 });
