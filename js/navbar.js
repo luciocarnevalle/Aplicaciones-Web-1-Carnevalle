@@ -1,3 +1,5 @@
+import { inicializarModoOscuro } from './modoOscuro.js';
+
 export const paginas = [
   { titulo: "Inicio", url: "/index.html" },
   { titulo: "Login", url: "../pages/login.html" },
@@ -22,7 +24,8 @@ export const navbar = `
     </div>
 
     <ul class="nav-links">
-      ${linksHTML}
+      ${linksHTML} 
+      <button id="btn-modo-oscuro" class="btn-nav-mode">Modo Oscuro</button>
     </ul>
   </nav>
 `;
@@ -30,4 +33,6 @@ export const navbar = `
 window.addEventListener("load", function () {
   const navContainer = document.querySelector("header");
   navContainer.innerHTML = navbar;
+
+  inicializarModoOscuro();  //Inicializo el modo oscuro
 });

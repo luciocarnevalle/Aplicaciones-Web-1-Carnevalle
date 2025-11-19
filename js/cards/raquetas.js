@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   botonVolver();
   
    fetch('/data/productos.json')
-      .then(response => response.json()) // Convertimos la respuesta a JSON
+      .then(response => response.json()) // Convierto la respuesta a JSON
       .then(productos => { // 'productos' es ahora un array con TODOS los productos
 
           todosLosProductos = productos;

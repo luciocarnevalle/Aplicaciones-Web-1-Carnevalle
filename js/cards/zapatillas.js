@@ -4,7 +4,7 @@ import { botonVolver } from '../btn-volver.js';
 
 
 function crearProductoCard(producto, index) {
-  // El 'index' será 0, 1, 2...
+  // El 'index' va a ser 0, 1, 2...
   // Lo uso para generar dinámicamente las clases "card1", "card2", "card3"
   const cardClass = `card${index + 1}`; 
 
@@ -30,7 +30,7 @@ function crearProductoCard(producto, index) {
 
 
 function renderizarProductos(productos, selectorContenedor) {
-  // Buscamos el contenedor por su clase (ej: ".cardsAsics")
+  // Busco el contenedor por su clase (ej: ".cardsAsics")
   const contenedor = document.querySelector(selectorContenedor);
   if (!contenedor) {
     console.error("No se encontró el contenedor:", selectorContenedor);

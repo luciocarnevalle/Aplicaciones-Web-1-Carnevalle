@@ -150,16 +150,19 @@
 /* Aviso de registro */
 .aviso-registro {
   margin-top: 20px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #000000;
+  text-align: center;
+  font-weight: bold;
 }
 .aviso-registro a {
+  font-size: 1.2rem;
   color: #000000;
   text-decoration: underline;
   font-weight: bold;
 }
 .aviso-registro a:hover {
-  color: #2c14b6;
+  color: #ffffff;
 }
 
 /* BOTON */
@@ -194,11 +197,8 @@
   color: #fff;
   text-align: center;
   padding: 25px 10px;
-  margin-top: 10px;
   font-family: "Poppins", sans-serif;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 .footer p {
   margin: 8px 0;
@@ -632,3 +632,126 @@ form button:hover {
     text-align: center;
     padding: 2rem;
 }
+
+
+
+/*  MODO OSCURO GLOBAL (Para todas las páginas) */
+
+/* Estilo del Botón "Modo Oscuro" (Solo Texto) */
+#btn-modo-oscuro {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 6px 18px; 
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+
+    /* FUENTE: Igualar al navbar */
+    font-family: "Poppins", sans-serif; 
+    font-size: 1rem;   
+    font-weight: 400;  
+
+    /* POSICIÓN: Subirlo un poquito */
+    transform: translateY(-5px); 
+}
+
+/* Efecto al pasar el mouse */
+#btn-modo-oscuro:hover {
+    background-color: #ffffff;
+    color: #0427c2; 
+}
+
+/* Fondo y Texto General del Body */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* CONTENEDORES Y CAJAS (La parte más importante)
+/* Cambio los fondos claros por tonos oscuros */
+body.dark-mode .contenido,          
+body.dark-mode .mision,             
+body.dark-mode .lista,             
+body.dark-mode .card1,              
+body.dark-mode .card2,              
+body.dark-mode .card3,              
+body.dark-mode .TituloMarcas,       
+body.dark-mode .detalles-items,     
+body.dark-mode .detalles-telefono,  
+body.dark-mode .contacto-mapa,      
+body.dark-mode form,                
+body.dark-mode #carrito-productos-container {
+    background-color: #1e1e1e;      
+    color: #e0e0e0;                 
+    border-color: #444;             
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+}
+
+/* Títulos (H1, H2, H3) */
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3,
+body.dark-mode .TituloProductos p,  
+body.dark-mode .TituloMarcas p {    
+    color: #f1f1f1;
+}
+
+body.dark-mode h2 {
+    color: #64b5f6; 
+}
+
+/* FORMULARIOS */
+body.dark-mode input, 
+body.dark-mode textarea, 
+body.dark-mode select {
+    background-color: #2c2c2c;
+    border: 1px solid #555;
+    color: #ffffff;
+}
+
+body.dark-mode label {
+    color: #cccccc;
+}
+
+/* CARRITO DE COMPRAS */
+body.dark-mode .carrito-producto-item {
+    border-bottom: 1px solid #444; /* Líneas separadoras más oscuras */
+}
+
+body.dark-mode .carrito-total-texto {
+    color: #ffffff;
+}
+
+body.dark-mode #carrito-footer {
+    border-top: 2px solid #444;
+}
+
+body.dark-mode #carrito-vacio p {
+    color: #fff;
+}
+
+/* PRECIOS Y DETALLES EN TARJETAS */
+body.dark-mode .precio {
+    color: #81c784; 
+}
+
+/* ENLACES */
+body.dark-mode a {
+    color: #000000;
+}
+
+/* Excepción: Mantener los links del Navbar y Footer en blanco */
+body.dark-mode .nav-links a,
+body.dark-mode .footer a {
+    color: #ffffff !important; /* Navbar/footer blanco  */
+}
+
+/* BOTONES EN TARJETAS DE PRODUCTOS */
+body.dark-mode .boton-card {
+    color: #ffffff !important; /* Color para modo oscuro */
+    background-color: #2a5298; /* Mantiene el fondo azul */
+}
+
